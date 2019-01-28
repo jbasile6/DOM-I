@@ -56,6 +56,23 @@ navBar[3].textContent = siteContent['nav']['nav-item-4'];
 navBar[4].textContent = siteContent['nav']['nav-item-5'];
 navBar[5].textContent = siteContent['nav']['nav-item-6'];
 
+navBar.forEach(element => element.style.color = 'green');
+
+const navigation = document.querySelector('nav')
+
+const newNavItemPre = document.createElement('a');
+newNavItemPre.href = '#';
+newNavItemPre.textContent = 'Prepend Item';
+newNavItemPre.style.color = 'green';
+
+const newNavItemApp = document.createElement('a');
+newNavItemApp.href = '#';
+newNavItemApp.textContent = 'Append Item';
+newNavItemApp.style.color = 'green';
+
+navigation.prepend(newNavItemPre);
+navigation.append(newNavItemApp);
+
 
 //Section CTA-----------------------------------------------
 //h1 needs line breaks
