@@ -40,3 +40,40 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Nav Anchors
+const navBar = document.querySelectorAll('a');
+//Attempted to use forEach to run through each 'a' tag and give it 'nav-item-x' content
+//Will come back and try for loop once MVP complete, writing them out one by one for now
+
+
+// navBar.forEach(navItem => navItem.textContent = siteContent['nav'][`nav-item-${navBar.length -= (navBar.length -= 1)}`]);
+
+
+navBar[0].textContent = siteContent['nav']['nav-item-1'];
+navBar[1].textContent = siteContent['nav']['nav-item-2'];
+navBar[2].textContent = siteContent['nav']['nav-item-3'];
+navBar[3].textContent = siteContent['nav']['nav-item-4'];
+navBar[4].textContent = siteContent['nav']['nav-item-5'];
+navBar[5].textContent = siteContent['nav']['nav-item-6'];
+
+
+//Section CTA-----------------------------------------------
+
+//h1
+const domIsAwesome = document.querySelector('h1');
+domIsAwesome.textContent = siteContent['cta']['h1'];
+
+//button
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+//cirlce header img
+const circleImg = document.getElementById('cta-img');
+circleImg.setAttribute('src', siteContent['cta']['img-src']);
+circleImg.alt = "Header Cirlce Image";
+
+//-------------------------------------------------------------
+
+
+//MAIN CONTENT------------------------------------------------
